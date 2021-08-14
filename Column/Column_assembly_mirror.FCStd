@@ -1,4 +1,4 @@
-55547|55547|A|Document.xml
+55542|55542|A|Document.xml
 <?xml version='1.0' encoding='utf-8'?>
 <!--
  FreeCAD Document, see https://www.freecadweb.org for more information...
@@ -30,7 +30,7 @@
             <String value="derechoaleer"/>
         </Property>
         <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-            <String value="2021-04-21T14:14:54-03:00"/>
+            <String value="2021-08-05T22:53:57Z"/>
         </Property>
         <Property name="License" type="App::PropertyString" status="1">
             <String value="Creative Commons Attribution-ShareAlike"/>
@@ -671,7 +671,7 @@
                     <ExpressionEngine count="1" xlink="1">
                         <XLinks count="1" docs="1">
                             <DocMap name="Column_assembly" label="Column_assembly" index="0"/>
-                            <XLink file="Column_assembly.FCStd" stamp="2021-04-21T14:14:53-03:00" name="LCS_ORIG"/>
+                            <XLink file="Column_assembly.FCStd" stamp="2021-05-21T03:49:28-03:00" name="LCS_ORIG"/>
                         </XLinks>
                         <Expression path="Placement" expression="LCS_Origin.Placement * AttachmentOffset * Column_assembly#LCS_ORIG.Placement ^ -1"/>
                     </ExpressionEngine>
@@ -692,7 +692,7 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Column_assembly.FCStd" stamp="2021-04-21T14:14:53-03:00" name="Body007"/>
+                    <XLink file="Column_assembly.FCStd" stamp="2021-05-21T03:49:28-03:00" name="Body007"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="256">
                     <PropertyPlacement Px="-4.5000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
@@ -770,7 +770,7 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Column_assembly.FCStd" stamp="2021-04-21T14:14:53-03:00" name="Body_2"/>
+                    <XLink file="Column_assembly.FCStd" stamp="2021-05-21T03:49:28-03:00" name="Body_2"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="256">
                     <PropertyPlacement Px="-13.5000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
@@ -967,89 +967,33 @@ AAAAAA==
         <Expand name="Model"/>
     </Expand>
     <ViewProviderData Count="15">
+        <ViewProvider name="Origin" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="6" TransientCount="0">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyVector" status="5">
+                    <PropertyVector valueX="23.4000000000000021" valueY="629.2000000000000455" valueZ="1469.0000000000000000"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
         <ViewProvider name="Y_Axis" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="629.2000000000000455"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="XZ_Plane" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="1469.0000000000000000"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="XY_Plane" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -1113,7 +1057,114 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
+        <ViewProvider name="XZ_Plane" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="1469.0000000000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Model" expanded="1" Extensions="True">
+            <Extensions Count="2">
+                <Extension type="Gui::ViewProviderOriginGroupExtension" name="ViewProviderOriginGroupExtension">
+                </Extension>
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="5" TransientCount="0">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
         <ViewProvider name="X_Axis" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="629.2000000000000455"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="XY_Plane" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -1192,57 +1243,6 @@ AAAAAA==
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="1">
                     <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Model" expanded="1" Extensions="True">
-            <Extensions Count="2">
-                <Extension type="Gui::ViewProviderOriginGroupExtension" name="ViewProviderOriginGroupExtension">
-                </Extension>
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="5" TransientCount="0">
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Origin" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="6" TransientCount="0">
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyVector" status="5">
-                    <PropertyVector valueX="23.4000000000000021" valueY="629.2000000000000455" valueZ="1469.0000000000000000"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
                 </Property>
             </Properties>
         </ViewProvider>
@@ -1625,11 +1625,11 @@ AAAAAA==
             </Properties>
         </ViewProvider>
     </ViewProviderData>
-    <Camera settings="OrthographicCamera {&#10;  viewportMapping ADJUST_CAMERA&#10;  position -609.55261 -188.45068 889.51794&#10;  orientation 0.59157968 -0.39155757 -0.70478076  1.5080431&#10;  nearDistance 276.61795&#10;  farDistance 1257.5732&#10;  aspectRatio 1&#10;  focalDistance 769.9881&#10;  height 1539.9762&#10;&#10;}&#10;"/>
+    <Camera settings="OrthographicCamera {&#10;  viewportMapping ADJUST_CAMERA&#10;  position -609.55261 -188.45068 889.51794&#10;  orientation 0.59157974 -0.39155763 -0.70478082  1.5080431&#10;  nearDistance 276.61795&#10;  farDistance 1257.5732&#10;  aspectRatio 1&#10;  focalDistance 769.9881&#10;  height 1539.9762&#10;&#10;}&#10;"/>
 </Document>
 
-1776|1330|B|thumbnails/Thumbnail.png
-iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE1UlEQVR4nO2dy1ITQRSGuylehZ07eAeXgm6QhSuwChAjRPAuIiRAbmQwWF7Au1VQ6kbZuPYVFNS8jIuhmpbMTOZCn/+QOV/NIgam89P//H2mZ3qiHhycUAKOfq01WkOu6Zf+xyIJACMJANOvlDiARBIARmoAGDEATB9aQN6RBICRIgxGEgAGnIB2+4t5PTBwCagERZ9SGrod025/QYsBbNQJ+Pv3c8RPczgc8qoBrMTQ0Ke1otx8PM8LVPPnzydiPfCNvgYcexBow+/fn+DjMnENYJd6hpLcQToEHR7uRavxM3F4uAcfGeiGIE1InCPC9+DgYI9SGBC+lyJ+/do9d24UrcI5xEX4PwqFQqAmU5x//tyFF0mCIuzW4RTYxjCUd7pwPAuyYS4vOxwTYMNcXnb4r4pgLi8rkgAwUgPASALASALAAJalhF2Lziek14KGhq4oa54VxwlKeRBkCAIjRRiMJACMrA0FIwkAg6wBYfcDbHq9/yUBaJA1QGZkShIAR+YBYEgT8OPHdtJd8pAA1n8hc3nZkauhYAAr4+Kc/hso5UGQiRgYqQFg5GIcGEkAGJmIgZEEgJEEgEE+HxBvRoZfwu90kwSAIa0B589Pf/++lWgXqQFgmMvLjjwfAAZ5GhrvWlDvG4CWEAlzedkhvRwdeDhHn4wSy6OHNAH7+5tJd+n5BBAV4f39o8M8+e2wHneAIgHfvqXu/RwkQLv8E79+bZrX8Xvf/03/HMmpPA5QJCC66wNPRs2bvd7/LCdipvcvXJjFKiEAPw/wPM/0uHkxPNz7Xe/D8YbMyMgcWgId+ATYXLyYo6734ZUAVmJo4FaEWYmhADYEBZ595i8AMgShARfhE3O0/PW/JACNrA0FA06AXYpHR28BlaDgMhG7fDmPva+ACTCXgMbGbkMEMEFqABj8WRBcABYxAAy+CMMFYJEEgJEiDEYSAEZqABhJABipAWAkAWCkBoDBJ2Bn57FSanx8ESsDBT4BPtvbS/6LiYl8OYFclmKvgrbgcURQgR+CzH1534mXLx9dvboEVUSK2/9NNRHGiRcvFp2qYrW5fUgv6eFgPHj+fNGpMD4gJ2KFQqFzfZzx4Nmzh+SKAOBrQCfmdrHxYHJyGarIIXp5OfG32cbn6dMH9j/NaY9deMMeYAp7jn5qqqfM0CsrO04/YGvrfvQvpHiCzGZ6eiWxJk7oUsmtATatVhczVKQfXc24du3smaFLpVdYBa3Wvc434zzTGsOPUhY96XZPii6XwQbYPHkSYIYhSzhmZmL1ZqCAmPumQ6+uvnbXemo2N+9G/LRrPqL9uH69nPRDw3bJjl5b42hAIJ53soNOZaQqFMqm5RMNWs/POjTgjaOmHeF5d0Lej/VVCBF+dLZgGbAaT11i9Pr6G0dNE9BsBpuhkocj7Nj3uXHDmQGVyltHTROzsRG6yjrFt7TYBszOrqXUFANdrb5z1zqQRiP0gYMUlWNubv0UNAWha7XeNMCmXk9phrGhWHRowHtHTbOlXl8I+1FYHS4WK47E6Ho9dwbY1GpRZpgE3LzpzIBG44Ojps8i1ep84Pvz81VHn6g3NsSAYCqVIzMWFlz1vlJKN5sf3bUudEXWhoLheEsyV3BZGZdbJAFgpAaAkQSAEQPASBEGIwkA8w9vqCeWG79m6wAAAABJRU5ErkJggg==
+3576|2681|B|thumbnails/Thumbnail.png
+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
 12|8|B|DiffuseColor
 AQAAAADMzMw=
 12|8|B|LineColorArray
