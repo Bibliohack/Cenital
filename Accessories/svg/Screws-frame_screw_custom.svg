@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 793.7007874015749 1122.5196850393702"
+   width="793.7007874015749"
+   height="1122.5196850393702"
+   version="1.1"
+   id="svg66"
+   sodipodi:docname="Screws-frame_screw_custom.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview68"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.29219978"
+     inkscape:cx="318.27539"
+     inkscape:cy="953.11501"
+     inkscape:window-width="1280"
+     inkscape:window-height="964"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g64" />
+  <desc
+     id="desc2">Screws-frame_screw_custom_ok.dxf - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
+  <defs
+     id="defs16">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5"
+         style="stroke:#000000; stroke-width:0.5"
+         id="path4" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path7" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path9" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path11" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g18" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="none"
+     id="g20" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Shape2DView"
+     id="g64">
+    <g
+       id="g190"
+       transform="translate(351.49606,-515.90537)">
+      <path
+         id="path60"
+         style="fill:none;stroke:#000000"
+         d="m 90.708681,1098.3304 c -3.5e-5,-2.0871 -1.692183,-3.7792 -3.779564,-3.7798 L 71.5276,1094.55 v -34.77 l 15.401517,-2e-4 c 2.087381,-3e-4 3.779529,-1.6924 3.779563,-3.7798 v -5.2906 c 1.5e-5,-10.4376 -8.460755,-18.8984 -18.897668,-18.8989 H 18.897619 C 8.4607365,1031.811 -3.4241734e-5,1040.2718 0,1050.7094 V 1056 c 1.5463892e-5,2.0874 1.6921633,3.7795 3.779529,3.7798 l 15.401571,2e-4 v 34.77 l -15.401571,6e-4 C 1.6921633,1094.5512 1.5463892e-5,1096.2433 0,1098.3304 v 5.2906 c -3.4241734e-5,10.4379 8.4607365,18.8987 18.897619,18.8989 h 52.913393 c 10.436913,-2e-4 18.897683,-8.461 18.897669,-18.8989 z"
+         sodipodi:nodetypes="ccccccccccccccccccccc" />
+      <path
+         d="m 57.543307,1077.1654 a 12.188977,12.188977 0 1 0 -24.377953,0 12.188977,12.188977 0 1 0 24.377953,0 z"
+         style="fill:none;stroke:#000000"
+         id="path62" />
+    </g>
+  </g>
+</svg>

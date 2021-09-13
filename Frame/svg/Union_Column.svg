@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 2245.0393 3178.5828"
+   width="594mm"
+   height="841mm"
+   version="1.1"
+   id="svg196"
+   sodipodi:docname="Union_Column.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview198"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     units="mm"
+     inkscape:zoom="0.10330822"
+     inkscape:cx="-532.38743"
+     inkscape:cy="1079.2945"
+     inkscape:window-width="1280"
+     inkscape:window-height="964"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g194"
+     inkscape:document-units="mm" />
+  <desc
+     id="desc2">Union_Column.dxf - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
+  <defs
+     id="defs16" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g18" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="none"
+     id="g20" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Shape2DView"
+     id="g194">
+    <g
+       id="g1142"
+       transform="translate(820.15759,1714.0151)">
+      <path
+         id="path188"
+         style="fill:none;stroke:#000000"
+         d="m 452.738,-948.661 v -18.898 h 20.788 v -14.268 h 97.183 v 101.197 l 28.34606,4e-5 c 3.13112,4e-5 5.66935,2.53827 5.66914,5.66914 v 291.02381 c 2.1e-4,3.13106 -2.53802,5.66929 -5.66914,5.66915 L 570.709,-578.268 v 907.087 l 28.34606,-5e-5 c 3.13112,-5e-5 5.66935,2.53818 5.66914,5.66914 V 625.5119 c 2.1e-4,3.13097 -2.53802,5.6692 -5.66914,5.66915 L 570.709,631.181 V 732.378 H 473.526 V 718.11 h -20.788 v -18.897 l -49.1338,-2e-4 c -10.43667,-2e-4 -18.89743,8.46056 -18.89732,18.89732 v 52.91369 c -1.1e-4,10.43669 8.46065,18.89745 18.89732,18.89732 l 49.1338,-1.3e-4 v -18.897 h 20.788 v -14.268 h 97.183 V 1122.52 H 34.0157 V 756.756 h 97.1813 v 14.268 h 20.787 v 18.897 l 49.13405,1.3e-4 c 10.43694,1.3e-4 18.8977,-8.46063 18.89782,-18.89732 v -52.91369 c -1.2e-4,-10.43676 -8.46088,-18.89752 -18.89782,-18.89732 l -49.13405,2e-4 v 18.897 h -20.787 v 14.268 H 34.0157 V 631.181 l -28.3464095,5e-5 C 2.5382284,631.1811 5.5228465e-7,628.64287 0,625.5119 V 334.48809 c 5.5228465e-7,-3.13096 2.5382284,-5.66919 5.6692905,-5.66914 l 28.3464095,5e-5 v -907.087 l -28.3464095,1.4e-4 C 2.5382284,-578.26772 5.5228465e-7,-580.80595 0,-583.937 v -291.02382 c 5.5228465e-7,-3.13087 2.5382284,-5.6691 5.6692905,-5.66914 L 34.0157,-880.63 v -101.197 h 97.1813 v 14.268 h 20.787 v 18.898 l 49.13405,-2.1e-4 c 10.43693,-2.1e-4 18.8977,-8.46097 18.89782,-18.89782 V -1020.47 c -9e-5,-10.4369 -8.46086,-18.8977 -18.89782,-18.8977 l -49.13405,10e-5 v 18.9 h -20.787 v 14.27 H 34.0157 v -365.77 H 570.709 v 365.77 h -97.183 v -14.27 h -20.788 v -18.9 l -49.1338,-10e-5 c -10.43669,0 -18.89746,8.4608 -18.89732,18.8977 v 52.91097 c -1.1e-4,10.43685 8.46066,18.89761 18.89732,18.89782 z"
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+      <path
+         d="m 453.54331,-427.08661 a 151.1811,151.1811 0 1 0 -302.36221,0 151.1811,151.1811 0 1 0 302.36221,0 z"
+         style="fill:none;stroke:#000000"
+         id="path190" />
+      <path
+         d="m 453.54331,177.63779 a 151.1811,151.1811 0 1 0 -302.36221,0 151.1811,151.1811 0 1 0 302.36221,0 z"
+         style="fill:none;stroke:#000000"
+         id="path192" />
+    </g>
+  </g>
+</svg>

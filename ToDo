@@ -1,0 +1,55 @@
+### Future file structure schema 
+
+FreeCAD
+	Cenital ("Model Name" todo lo que debe ser cortado/fabricado)
+		Main_Assembly
+			contours
+				svg
+				dwg
+		Frame
+			contours
+				svg
+				dwg
+		Base
+			..
+		Column
+			..
+		Lights
+			..
+		CameraHolder
+			..
+	Accesories (accesorios que se compran fabricados!)
+		Human
+			...
+		Canon
+			...
+		Sliders
+			...
+		LinearLed
+			...
+	FCMacros
+		...
+Contours
+	LaserCut
+		AAAxBBB (print area)
+			9mm
+				pdf
+					A-AAAxBBB-9mm.pdf
+					...
+				svg
+					A-AAAxBBB-9mm.svg
+					...
+			5mm
+		CCCxDDD
+			...
+	CNC
+		...
+BIM
+	???
+	...
+Blueprints
+
+Documentation (build instructions)
+
+UserManual (scanner user manual)
+
