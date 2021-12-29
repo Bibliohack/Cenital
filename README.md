@@ -1,7 +1,7 @@
 # Cenital
-FreeCAD project for laser-cut newspaper digitization copy stand
+FreeCAD project for laser-cut newspaper digitization copy stand (GG-model)
 
-![preview image](https://github.com/Bibliohack/Cenital/blob/main/media/preview.png)
+![preview image](https://github.com/Bibliohack/Cenital/blob/GG-model/media/preview.png)
 
 (this is a work in progress! it is not built yet)
 
