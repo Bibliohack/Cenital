@@ -1,4 +1,4 @@
-59794|59794|A|Document.xml
+59793|59793|A|Document.xml
 <?xml version='1.0' encoding='utf-8'?>
 <!--
  FreeCAD Document, see https://www.freecadweb.org for more information...
@@ -30,7 +30,7 @@
             <String value="derechoaleer"/>
         </Property>
         <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-            <String value="2022-08-12T07:08:06Z"/>
+            <String value="2022-08-13T01:44:03Z"/>
         </Property>
         <Property name="License" type="App::PropertyString" status="1">
             <String value="Creative Commons Attribution-ShareAlike"/>
@@ -775,8 +775,8 @@
                             <XLink file="body.FCStd" stamp="2022-08-11T05:28:48Z" name="LCS_axis_1"/>
                             <XLink file="body_base_mov.FCStd" stamp="2022-08-12T07:08:06Z" name="LCS_1"/>
                         </XLinks>
-                        <Expression path=".AttachmentOffset.Rotation.Angle" expression="Variables.x_rotation"/>
                         <Expression path="Placement" expression="body.Placement * body#LCS_axis_1.Placement * AttachmentOffset * body_base_mov#LCS_1.Placement ^ -1"/>
+                        <Expression path=".AttachmentOffset.Rotation.Angle" expression="Variables.x_rotation"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -860,8 +860,8 @@
                             <XLink file="body_base_mov.FCStd" stamp="2022-08-12T07:08:06Z" name="LCS_Origin"/>
                             <XLink file="rotating_base.FCStd" stamp="2022-08-12T07:08:06Z" name="LCS_Origin"/>
                         </XLinks>
-                        <Expression path=".AttachmentOffset.Rotation.Angle" expression="Variables.z_rotation"/>
                         <Expression path="Placement" expression="body_base_mov.Placement * body_base_mov#LCS_Origin.Placement * AttachmentOffset * rotating_base#LCS_Origin.Placement ^ -1"/>
+                        <Expression path=".AttachmentOffset.Rotation.Angle" expression="Variables.z_rotation"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -945,11 +945,11 @@
                         <XLinks count="2" docs="2">
                             <DocMap name="camera_holder" label="camera_holder" index="0"/>
                             <DocMap name="rotating_base" label="rotating_base" index="1"/>
-                            <XLink file="camera_holder.FCStd" stamp="2022-08-11T06:40:00Z" name="LCS_Origin"/>
+                            <XLink file="camera_holder.FCStd" stamp="2022-08-13T01:44:03Z" name="LCS_Origin"/>
                             <XLink file="rotating_base.FCStd" stamp="2022-08-12T07:08:06Z" name="LCS_Origin"/>
                         </XLinks>
-                        <Expression path=".AttachmentOffset.Base.x" expression="Variables.cam_linear"/>
                         <Expression path="Placement" expression="rotating_base.Placement * rotating_base#LCS_Origin.Placement * AttachmentOffset * camera_holder#LCS_Origin.Placement ^ -1"/>
+                        <Expression path=".AttachmentOffset.Base.x" expression="Variables.cam_linear"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -968,7 +968,7 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="camera_holder.FCStd" stamp="2022-08-11T06:40:00Z" name="Model"/>
+                    <XLink file="camera_holder.FCStd" stamp="2022-08-13T01:44:03Z" name="Model"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="256">
                     <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="5.5000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
@@ -992,7 +992,7 @@
                     <String value=""/>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="false"/>
+                    <Bool value="true"/>
                 </Property>
                 <Property name="VisibilityList" type="App::PropertyBoolList" status="266">
                     <BoolList value=""/>
@@ -1114,7 +1114,7 @@ AAAAAA==
 AAAAAA==
 8|4|B|ScaleList3
 AAAAAA==
-43461|43461|A|GuiDocument.xml
+43459|43459|A|GuiDocument.xml
 <?xml version='1.0' encoding='utf-8'?>
 <!--
  FreeCAD Document, see http://www.freecadweb.org for more information...
@@ -1280,7 +1280,7 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="XZ_Plane" expanded="0" Extensions="True">
+        <ViewProvider name="Z_Axis" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -1362,6 +1362,47 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
+        <ViewProvider name="XZ_Plane" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="272.9608428955078239"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
         <ViewProvider name="YZ_Plane" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
@@ -1394,47 +1435,6 @@ AAAAAA==
                 </Property>
                 <Property name="Size" type="App::PropertyFloat" status="16777217">
                     <Float value="474.5000000000000000"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Z_Axis" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="272.9608428955078239"/>
                 </Property>
                 <Property name="Transparency" type="App::PropertyPercent" status="1">
                     <Integer value="0"/>
@@ -1907,11 +1907,11 @@ AAAAAA==
                     <Bool value="true"/>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
+                    <Bool value="true"/>
                 </Property>
             </Properties>
         </ViewProvider>
     </ViewProviderData>
-    <Camera settings="OrthographicCamera {&#10;  viewportMapping ADJUST_CAMERA&#10;  position -1347.6278 -137.52316 -243.16484&#10;  orientation -0.71741718 0.52189207 0.46145579  4.2187433&#10;  nearDistance 1130.0146&#10;  farDistance 1611.2433&#10;  aspectRatio 1&#10;  focalDistance 1300.493&#10;  height 484.09335&#10;&#10;}&#10;"/>
+    <Camera settings="OrthographicCamera {&#10;  viewportMapping ADJUST_CAMERA&#10;  position 864.17133 -602.3266 191.65932&#10;  orientation -0.78807843 -0.53135681 -0.31079307  4.7985725&#10;  nearDistance 806.64606&#10;  farDistance 1441.3433&#10;  aspectRatio 1&#10;  focalDistance 1300.493&#10;  height 484.09335&#10;&#10;}&#10;"/>
 </Document>
 
