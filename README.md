@@ -1,9 +1,13 @@
 # Cenital
-FreeCAD project for laser-cut newspaper digitization copy stand (GG-model)
+FreeCAD project for laser-cut newspaper digitization copy stand
 
-![preview image](https://github.com/Bibliohack/Cenital/blob/GG-model/media/preview.png)
+![preview image](https://github.com/Bibliohack/Cenital/blob/main/media/preview.png)
 
-(this is a work in progress! some pictures of the assembly and tests [here](https://twitter.com/BiblioHack/status/1390039768562548741), [here](https://twitter.com/BiblioHack/status/1400752494892965889) and [here](https://twitter.com/BiblioHack/status/1405678919806865413) )
+This device has already been deployed in three institutions! [more info](http://codex.bibliohack.org/#cenital)
+
+![preview image](https://github.com/Bibliohack/Cenital/blob/main/media/archivo_ciudad.jpg)
+
+(this is a work in progress! some pictures of the assembly and tests [here](https://twitter.com/BiblioHack/status/1524183028855033856), [here](https://twitter.com/BiblioHack/status/1390039768562548741), [here](https://twitter.com/BiblioHack/status/1400752494892965889) and [here](https://twitter.com/BiblioHack/status/1405678919806865413) )
 
 **important**: You need to have [`zippey`](https://bitbucket.org/sippey/zippey/src/master/) installed to use this repository 
 
