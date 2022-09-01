@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/pampa/.FreeCAD/Macro/export_draft.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Draft
+#import gui_shape2dview
+import importDXF
+import FreeCADGui
+
+obj = []
+for selection in FreeCADGui.Selection.getSelectionEx():
+	obj = selection.Object
+
+
+if hasattr(obj, 'Label'):
+	obj_name = obj.Label
+else:
+	FreeCAD.Console.PrintMessage("The given object must have a name attribute\n")	
+	quit()
+
+
+FreeCAD.Console.PrintMessage("Object Name: " + obj_name + "\n")
+
+orientation = FreeCADGui.ActiveDocument.ActiveView.getCameraOrientation()
+direction = Gui.ActiveDocument.ActiveView.getViewDirection()
+FreeCAD.Console.PrintMessage(orientation)
+FreeCAD.Console.PrintMessage("\n")
+FreeCAD.Console.PrintMessage(direction)
+FreeCAD.Console.PrintMessage("\n")
+
+if Draft.makeShape2DView(obj, FreeCAD.Vector(direction)):
+	FreeCAD.Console.PrintMessage("created shape 2d!\n")
+
+	for selection in FreeCADGui.Selection.getSelectionEx():
+		shape = selection.Object
+
+	shape_name = shape.Label
+	FreeCAD.Console.PrintMessage("Shape Name: " + shape_name + "\n")
+
+	shape.Label = obj_name + "_shape"
+	FreeCAD.ActiveDocument.recompute()
+	#filename = "/wrk/now/bibliohack/Cenital/_laser_cut/1250x900_2/frame_and_camera/"+ shape.Label + ".dxf"
+	__objs__=[]
+	__objs__.append(shape)
+	importDXF.export(__objs__, u"/wrk/now/bibliohack/Cenital/_laser_cut/1250x900_2/frame_and_camera/" + shape.Label + u".dxf")
+
+	

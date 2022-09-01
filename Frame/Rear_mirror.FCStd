@@ -1,4 +1,4 @@
-99423|99423|A|Document.xml
+69574|69574|A|Document.xml
 <?xml version='1.0' encoding='utf-8'?>
 <!--
  FreeCAD Document, see https://www.freecadweb.org for more information...
@@ -30,7 +30,7 @@
             <String value="derechoaleer"/>
         </Property>
         <Property name="LastModifiedDate" type="App::PropertyString" status="16777217">
-            <String value="2021-04-21T14:14:54-03:00"/>
+            <String value="2022-08-02T06:28:45Z"/>
         </Property>
         <Property name="License" type="App::PropertyString" status="1">
             <String value="Creative Commons Attribution-ShareAlike"/>
@@ -56,9 +56,9 @@
             <Uuid value="a685abb5-1ddf-48cf-b0b8-40f87d4e8476"/>
         </Property>
     </Properties>
-    <Objects Count="24" Dependencies="1">
+    <Objects Count="19" Dependencies="1">
         <ObjectDeps Name="Parts" Count="0"/>
-        <ObjectDeps Name="Model" Count="16">
+        <ObjectDeps Name="Model" Count="11">
             <Dep Name="Origin"/>
             <Dep Name="LCS_Origin"/>
             <Dep Name="Constraints"/>
@@ -68,11 +68,6 @@
             <Dep Name="LCS_hinges"/>
             <Dep Name="LCS_hinge_mirror"/>
             <Dep Name="Rear1_Main"/>
-            <Dep Name="Rear1_side_reinforcement"/>
-            <Dep Name="Rear1_center_reinforcement"/>
-            <Dep Name="Rear1_Hinge_support"/>
-            <Dep Name="Rear1_Hinge_support_base"/>
-            <Dep Name="Rear1_Hinge_suppor_rib"/>
             <Dep Name="Rear1_Acrylic_support"/>
             <Dep Name="Rear_Acrylic_top"/>
         </ObjectDeps>
@@ -112,26 +107,6 @@
             <Dep Name="LCS_Origin"/>
             <Dep Name="LCS_Origin"/>
         </ObjectDeps>
-        <ObjectDeps Name="Rear1_side_reinforcement" Count="2">
-            <Dep Name="LCS_Origin"/>
-            <Dep Name="LCS_Origin"/>
-        </ObjectDeps>
-        <ObjectDeps Name="Rear1_center_reinforcement" Count="2">
-            <Dep Name="LCS_Origin"/>
-            <Dep Name="LCS_Origin"/>
-        </ObjectDeps>
-        <ObjectDeps Name="Rear1_Hinge_support" Count="2">
-            <Dep Name="LCS_hinge_mirror"/>
-            <Dep Name="LCS_hinge_mirror"/>
-        </ObjectDeps>
-        <ObjectDeps Name="Rear1_Hinge_support_base" Count="2">
-            <Dep Name="LCS_hinge_mirror"/>
-            <Dep Name="LCS_hinge_mirror"/>
-        </ObjectDeps>
-        <ObjectDeps Name="Rear1_Hinge_suppor_rib" Count="2">
-            <Dep Name="LCS_hinge_mirror"/>
-            <Dep Name="LCS_hinge_mirror"/>
-        </ObjectDeps>
         <ObjectDeps Name="Rear1_Acrylic_support" Count="2">
             <Dep Name="LCS_Origin"/>
             <Dep Name="LCS_Origin"/>
@@ -157,15 +132,10 @@
         <Object type="PartDesign::CoordinateSystem" name="LCS_hinges" id="2155" />
         <Object type="PartDesign::CoordinateSystem" name="LCS_hinge_mirror" id="2156" />
         <Object type="App::Link" name="Rear1_Main" id="2168" />
-        <Object type="App::Link" name="Rear1_side_reinforcement" id="2169" />
-        <Object type="App::Link" name="Rear1_center_reinforcement" id="2170" />
-        <Object type="App::Link" name="Rear1_Hinge_support" id="2171" />
-        <Object type="App::Link" name="Rear1_Hinge_support_base" id="2172" />
-        <Object type="App::Link" name="Rear1_Hinge_suppor_rib" id="2173" />
         <Object type="App::Link" name="Rear1_Acrylic_support" id="2174" />
         <Object type="App::Link" name="Rear_Acrylic_top" id="2175" />
     </Objects>
-    <ObjectData Count="24">
+    <ObjectData Count="19">
         <Object name="Parts" Extensions="True">
             <Extensions Count="1">
                 <Extension type="App::GroupExtension" name="GroupExtension">
@@ -213,7 +183,7 @@
                     </ExpressionEngine>
                 </Property>
                 <Property name="Group" type="App::PropertyLinkList">
-                    <LinkList count="15">
+                    <LinkList count="10">
                         <Link value="LCS_Origin"/>
                         <Link value="Constraints"/>
                         <Link value="Variables"/>
@@ -222,11 +192,6 @@
                         <Link value="LCS_hinges"/>
                         <Link value="LCS_hinge_mirror"/>
                         <Link value="Rear1_Main"/>
-                        <Link value="Rear1_side_reinforcement"/>
-                        <Link value="Rear1_center_reinforcement"/>
-                        <Link value="Rear1_Hinge_support"/>
-                        <Link value="Rear1_Hinge_support_base"/>
-                        <Link value="Rear1_Hinge_suppor_rib"/>
                         <Link value="Rear1_Acrylic_support"/>
                         <Link value="Rear_Acrylic_top"/>
                     </LinkList>
@@ -484,7 +449,7 @@
                         <Link obj="X_Axis" sub=""/>
                     </LinkSubList>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="649">
+                <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="false"/>
                 </Property>
             </Properties>
@@ -787,7 +752,7 @@
                         <Link obj="hinge_support" sub="Edge1"/>
                     </LinkSubList>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="649">
+                <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="false"/>
                 </Property>
             </Properties>
@@ -835,7 +800,7 @@
                         <Link obj="hinge_support" sub="Vertex4"/>
                     </LinkSubList>
                 </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="649">
+                <Property name="Visibility" type="App::PropertyBool" status="648">
                     <Bool value="false"/>
                 </Property>
             </Properties>
@@ -873,7 +838,7 @@
                     <ExpressionEngine count="1" xlink="1">
                         <XLinks count="1" docs="1">
                             <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0"/>
+                            <XLink file="Rear.FCStd" stamp="2021-09-13T00:01:28Z" name="LCS_0"/>
                         </XLinks>
                         <Expression path="Placement" expression="LCS_Origin.Placement * AttachmentOffset * Rear#LCS_0.Placement ^ -1"/>
                     </ExpressionEngine>
@@ -894,7 +859,7 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="Main"/>
+                    <XLink file="Rear.FCStd" stamp="2021-09-13T00:01:28Z" name="Main"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="256">
                     <PropertyPlacement Px="0.0000000000000000" Py="4.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
@@ -907,416 +872,6 @@
                 </Property>
                 <Property name="ScaleList" type="App::PropertyVectorList" status="256">
                     <VectorList file="ScaleList"/>
-                </Property>
-                <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
-                    <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
-                </Property>
-                <Property name="ShowElement" type="App::PropertyBool" status="256">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="VisibilityList" type="App::PropertyBoolList" status="266">
-                    <BoolList value=""/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Rear1_side_reinforcement" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="App::LinkExtension" name="LinkExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="22" TransientCount="0">
-                <Property name="AssemblyType" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Asm4EE"/>
-                </Property>
-                <Property name="AttachedBy" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="#LCS_0001"/>
-                </Property>
-                <Property name="AttachedTo" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Parent Assembly#LCS_Origin"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <PropertyPlacement Px="0.0000000000000000" Py="13.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="67109120">
-                    <LinkSub value="" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="ElementCount" type="App::PropertyIntegerConstraint" status="256">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ElementList" type="App::PropertyLinkList" status="266">
-                    <LinkList count="0">
-                    </LinkList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="1" xlink="1">
-                        <XLinks count="1" docs="1">
-                            <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0001"/>
-                        </XLinks>
-                        <Expression path="Placement" expression="LCS_Origin.Placement * AttachmentOffset * Rear#LCS_0001.Placement ^ -1"/>
-                    </ExpressionEngine>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Rear1_side_reinforcement"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkExecute" type="App::PropertyString" status="256">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkPlacement" type="App::PropertyPlacement" status="264">
-                    <PropertyPlacement Px="0.0000000000000000" Py="13.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="LinkTransform" type="App::PropertyBool" status="256">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="side_reinforcement"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="256">
-                    <PropertyPlacement Px="0.0000000000000000" Py="13.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList1"/>
-                </Property>
-                <Property name="Scale" type="App::PropertyFloat" status="256">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList1"/>
-                </Property>
-                <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
-                    <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
-                </Property>
-                <Property name="ShowElement" type="App::PropertyBool" status="256">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="VisibilityList" type="App::PropertyBoolList" status="266">
-                    <BoolList value=""/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Rear1_center_reinforcement" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="App::LinkExtension" name="LinkExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="22" TransientCount="0">
-                <Property name="AssemblyType" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Asm4EE"/>
-                </Property>
-                <Property name="AttachedBy" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="#LCS_0002"/>
-                </Property>
-                <Property name="AttachedTo" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Parent Assembly#LCS_Origin"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <PropertyPlacement Px="0.0000000000000000" Py="13.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="67109120">
-                    <LinkSub value="" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="ElementCount" type="App::PropertyIntegerConstraint" status="256">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ElementList" type="App::PropertyLinkList" status="266">
-                    <LinkList count="0">
-                    </LinkList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="1" xlink="1">
-                        <XLinks count="1" docs="1">
-                            <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0002"/>
-                        </XLinks>
-                        <Expression path="Placement" expression="LCS_Origin.Placement * AttachmentOffset * Rear#LCS_0002.Placement ^ -1"/>
-                    </ExpressionEngine>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Rear1_center_reinforcement"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkExecute" type="App::PropertyString" status="256">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkPlacement" type="App::PropertyPlacement" status="264">
-                    <PropertyPlacement Px="0.0000000000000000" Py="13.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="LinkTransform" type="App::PropertyBool" status="256">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="center_reinforcement"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="256">
-                    <PropertyPlacement Px="0.0000000000000000" Py="13.5000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="1.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList2"/>
-                </Property>
-                <Property name="Scale" type="App::PropertyFloat" status="256">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList2"/>
-                </Property>
-                <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
-                    <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
-                </Property>
-                <Property name="ShowElement" type="App::PropertyBool" status="256">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="VisibilityList" type="App::PropertyBoolList" status="266">
-                    <BoolList value=""/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Rear1_Hinge_support" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="App::LinkExtension" name="LinkExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="22" TransientCount="0">
-                <Property name="AssemblyType" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Asm4EE"/>
-                </Property>
-                <Property name="AttachedBy" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="#LCS_0003"/>
-                </Property>
-                <Property name="AttachedTo" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Parent Assembly#LCS_hinge_mirror"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="-4.5000000000000000" Q0="0.0000000000000000" Q1="1.0000000000000000" Q2="0.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="1.0000000000000000" Oz="0.0000000000000000"/>
-                </Property>
-                <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="67109120">
-                    <LinkSub value="" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="ElementCount" type="App::PropertyIntegerConstraint" status="256">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ElementList" type="App::PropertyLinkList" status="266">
-                    <LinkList count="0">
-                    </LinkList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="1" xlink="1">
-                        <XLinks count="1" docs="1">
-                            <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0003"/>
-                        </XLinks>
-                        <Expression path="Placement" expression="LCS_hinge_mirror.Placement * AttachmentOffset * Rear#LCS_0003.Placement ^ -1"/>
-                    </ExpressionEngine>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Rear1_Hinge_support"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkExecute" type="App::PropertyString" status="256">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkPlacement" type="App::PropertyPlacement" status="264">
-                    <PropertyPlacement Px="289.3834502005946661" Py="-15.0000000000000231" Pz="112.6067549039577074" Q0="0.0000000000000002" Q1="0.9238795325112867" Q2="0.0000000000000001" Q3="-0.3826834323650897" A="3.9269908169872414" Ox="0.0000000000000002" Oy="1.0000000000000000" Oz="0.0000000000000001"/>
-                </Property>
-                <Property name="LinkTransform" type="App::PropertyBool" status="256">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="Hinge_support"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="256">
-                    <PropertyPlacement Px="289.3834502005946661" Py="-15.0000000000000231" Pz="112.6067549039577074" Q0="0.0000000000000002" Q1="0.9238795325112867" Q2="0.0000000000000001" Q3="-0.3826834323650897" A="3.9269908169872414" Ox="0.0000000000000002" Oy="1.0000000000000000" Oz="0.0000000000000001"/>
-                </Property>
-                <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList3"/>
-                </Property>
-                <Property name="Scale" type="App::PropertyFloat" status="256">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList3"/>
-                </Property>
-                <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
-                    <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
-                </Property>
-                <Property name="ShowElement" type="App::PropertyBool" status="256">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="VisibilityList" type="App::PropertyBoolList" status="266">
-                    <BoolList value=""/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Rear1_Hinge_support_base" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="App::LinkExtension" name="LinkExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="22" TransientCount="0">
-                <Property name="AssemblyType" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Asm4EE"/>
-                </Property>
-                <Property name="AttachedBy" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="#LCS_0004"/>
-                </Property>
-                <Property name="AttachedTo" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Parent Assembly#LCS_hinge_mirror"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <PropertyPlacement Px="0.0000000000000000" Py="0.0000000000000000" Pz="-13.5000000000000000" Q0="0.0000000000000000" Q1="1.0000000000000000" Q2="0.0000000000000000" Q3="0.0000000000000001" A="3.1415926535897931" Ox="0.0000000000000000" Oy="1.0000000000000000" Oz="0.0000000000000000"/>
-                </Property>
-                <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="67109120">
-                    <LinkSub value="" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="ElementCount" type="App::PropertyIntegerConstraint" status="256">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ElementList" type="App::PropertyLinkList" status="266">
-                    <LinkList count="0">
-                    </LinkList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="1" xlink="1">
-                        <XLinks count="1" docs="1">
-                            <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0004"/>
-                        </XLinks>
-                        <Expression path="Placement" expression="LCS_hinge_mirror.Placement * AttachmentOffset * Rear#LCS_0004.Placement ^ -1"/>
-                    </ExpressionEngine>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217728">
-                    <String value="Rear1_Hinge_support_base"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkExecute" type="App::PropertyString" status="256">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkPlacement" type="App::PropertyPlacement" status="264">
-                    <PropertyPlacement Px="283.0194891699157438" Py="-15.0000000000000195" Pz="106.2427938732787709" Q0="0.0000000000000002" Q1="0.9238795325112867" Q2="0.0000000000000001" Q3="-0.3826834323650897" A="3.9269908169872414" Ox="0.0000000000000002" Oy="1.0000000000000000" Oz="0.0000000000000001"/>
-                </Property>
-                <Property name="LinkTransform" type="App::PropertyBool" status="256">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="Hinge_support_base"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="256">
-                    <PropertyPlacement Px="283.0194891699157438" Py="-15.0000000000000195" Pz="106.2427938732787709" Q0="0.0000000000000002" Q1="0.9238795325112867" Q2="0.0000000000000001" Q3="-0.3826834323650897" A="3.9269908169872414" Ox="0.0000000000000002" Oy="1.0000000000000000" Oz="0.0000000000000001"/>
-                </Property>
-                <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList4"/>
-                </Property>
-                <Property name="Scale" type="App::PropertyFloat" status="256">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList4"/>
-                </Property>
-                <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
-                    <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
-                </Property>
-                <Property name="ShowElement" type="App::PropertyBool" status="256">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="648">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="VisibilityList" type="App::PropertyBoolList" status="266">
-                    <BoolList value=""/>
-                </Property>
-            </Properties>
-        </Object>
-        <Object name="Rear1_Hinge_suppor_rib" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="App::LinkExtension" name="LinkExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="22" TransientCount="0">
-                <Property name="AssemblyType" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Asm4EE"/>
-                </Property>
-                <Property name="AttachedBy" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="#LCS_0005"/>
-                </Property>
-                <Property name="AttachedTo" type="App::PropertyString" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <String value="Parent Assembly#LCS_hinge_mirror"/>
-                </Property>
-                <Property name="AttachmentOffset" type="App::PropertyPlacement" group="Assembly" doc="" attr="0" ro="0" hide="0" status="2097152">
-                    <PropertyPlacement Px="-125.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
-                </Property>
-                <Property name="ColoredElements" type="App::PropertyLinkSubHidden" status="67109120">
-                    <LinkSub value="" count="0">
-                    </LinkSub>
-                </Property>
-                <Property name="ElementCount" type="App::PropertyIntegerConstraint" status="256">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ElementList" type="App::PropertyLinkList" status="266">
-                    <LinkList count="0">
-                    </LinkList>
-                </Property>
-                <Property name="ExpressionEngine" type="App::PropertyExpressionEngine" status="67108864">
-                    <ExpressionEngine count="1" xlink="1">
-                        <XLinks count="1" docs="1">
-                            <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0005"/>
-                        </XLinks>
-                        <Expression path="Placement" expression="LCS_hinge_mirror.Placement * AttachmentOffset * Rear#LCS_0005.Placement ^ -1"/>
-                    </ExpressionEngine>
-                </Property>
-                <Property name="Label" type="App::PropertyString" status="134217729">
-                    <String value="Rear1_Hinge_support_rib"/>
-                </Property>
-                <Property name="Label2" type="App::PropertyString" status="67108992">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkExecute" type="App::PropertyString" status="256">
-                    <String value=""/>
-                </Property>
-                <Property name="LinkPlacement" type="App::PropertyPlacement" status="264">
-                    <PropertyPlacement Px="204.1770830676157402" Py="-14.9999999999999964" Pz="204.1770830676156265" Q0="0.0000000000000001" Q1="0.3826834323650898" Q2="-0.0000000000000002" Q3="0.9238795325112867" A="0.7853981633974484" Ox="0.0000000000000003" Oy="1.0000000000000000" Oz="-0.0000000000000004"/>
-                </Property>
-                <Property name="LinkTransform" type="App::PropertyBool" status="256">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="Hinge_suppor_rib"/>
-                </Property>
-                <Property name="Placement" type="App::PropertyPlacement" status="256">
-                    <PropertyPlacement Px="204.1770830676157402" Py="-14.9999999999999964" Pz="204.1770830676156265" Q0="0.0000000000000001" Q1="0.3826834323650898" Q2="-0.0000000000000002" Q3="0.9238795325112867" A="0.7853981633974484" Ox="0.0000000000000003" Oy="1.0000000000000000" Oz="-0.0000000000000004"/>
-                </Property>
-                <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList5"/>
-                </Property>
-                <Property name="Scale" type="App::PropertyFloat" status="256">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-                <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList5"/>
                 </Property>
                 <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
                     <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
@@ -1365,7 +920,7 @@
                     <ExpressionEngine count="1" xlink="1">
                         <XLinks count="1" docs="1">
                             <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0006"/>
+                            <XLink file="Rear.FCStd" stamp="2021-09-13T00:01:28Z" name="LCS_0006"/>
                         </XLinks>
                         <Expression path="Placement" expression="LCS_Origin.Placement * AttachmentOffset * Rear#LCS_0006.Placement ^ -1"/>
                     </ExpressionEngine>
@@ -1386,19 +941,19 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="Acrylic_support"/>
+                    <XLink file="Rear.FCStd" stamp="2021-09-13T00:01:28Z" name="Acrylic_support"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="256">
                     <PropertyPlacement Px="180.0000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList6"/>
+                    <PlacementList file="PlacementList1"/>
                 </Property>
                 <Property name="Scale" type="App::PropertyFloat" status="256">
                     <Float value="1.0000000000000000"/>
                 </Property>
                 <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList6"/>
+                    <VectorList file="ScaleList1"/>
                 </Property>
                 <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
                     <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
@@ -1447,10 +1002,10 @@
                     <ExpressionEngine count="2" xlink="1">
                         <XLinks count="1" docs="1">
                             <DocMap name="Rear" label="Rear" index="0"/>
-                            <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="LCS_0007"/>
+                            <XLink file="Rear.FCStd" stamp="2021-09-13T00:01:28Z" name="LCS_0007"/>
                         </XLinks>
-                        <Expression path=".AttachmentOffset.Base.x" expression="180 + 75.5"/>
                         <Expression path="Placement" expression="LCS_Origin.Placement * AttachmentOffset * Rear#LCS_0007.Placement ^ -1"/>
+                        <Expression path=".AttachmentOffset.Base.x" expression="180 + 75.5"/>
                     </ExpressionEngine>
                 </Property>
                 <Property name="Label" type="App::PropertyString" status="134217728">
@@ -1469,19 +1024,19 @@
                     <Bool value="false"/>
                 </Property>
                 <Property name="LinkedObject" type="App::PropertyXLink" status="256">
-                    <XLink file="Rear.FCStd" stamp="2021-04-21T14:14:54-03:00" name="Acrylic_top"/>
+                    <XLink file="Rear.FCStd" stamp="2021-09-13T00:01:28Z" name="Acrylic_top"/>
                 </Property>
                 <Property name="Placement" type="App::PropertyPlacement" status="256">
                     <PropertyPlacement Px="255.5000000000000000" Py="0.0000000000000000" Pz="0.0000000000000000" Q0="0.0000000000000000" Q1="0.0000000000000000" Q2="0.0000000000000000" Q3="1.0000000000000000" A="0.0000000000000000" Ox="0.0000000000000000" Oy="0.0000000000000000" Oz="1.0000000000000000"/>
                 </Property>
                 <Property name="PlacementList" type="App::PropertyPlacementList" status="256">
-                    <PlacementList file="PlacementList7"/>
+                    <PlacementList file="PlacementList2"/>
                 </Property>
                 <Property name="Scale" type="App::PropertyFloat" status="256">
                     <Float value="1.0000000000000000"/>
                 </Property>
                 <Property name="ScaleList" type="App::PropertyVectorList" status="256">
-                    <VectorList file="ScaleList7"/>
+                    <VectorList file="ScaleList2"/>
                 </Property>
                 <Property name="ScaleVector" type="App::PropertyVector" status="67109120">
                     <PropertyVector valueX="1.0000000000000000" valueY="1.0000000000000000" valueZ="1.0000000000000000"/>
@@ -1660,38 +1215,109 @@ AAAAAA==
 AAAAAA==
 8|4|B|ScaleList2
 AAAAAA==
-8|4|B|PlacementList3
-AAAAAA==
-8|4|B|ScaleList3
-AAAAAA==
-8|4|B|PlacementList4
-AAAAAA==
-8|4|B|ScaleList4
-AAAAAA==
-8|4|B|PlacementList5
-AAAAAA==
-8|4|B|ScaleList5
-AAAAAA==
-8|4|B|PlacementList6
-AAAAAA==
-8|4|B|ScaleList6
-AAAAAA==
-8|4|B|PlacementList7
-AAAAAA==
-8|4|B|ScaleList7
-AAAAAA==
-67332|67332|A|GuiDocument.xml
+52182|52182|A|GuiDocument.xml
 <?xml version='1.0' encoding='utf-8'?>
 <!--
  FreeCAD Document, see http://www.freecadweb.org for more information...
 -->
 <Document SchemaVersion="1" HasExpansion="1">
-    <Expand  count="2">
+    <Expand  count="1">
         <Expand name="Parts"/>
-        <Expand name="Model"/>
     </Expand>
-    <ViewProviderData Count="24">
-        <ViewProvider name="XZ_Plane" expanded="0" Extensions="True">
+    <ViewProviderData Count="19">
+        <ViewProvider name="Origin" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="6" TransientCount="0">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyVector" status="5">
+                    <PropertyVector valueX="910.0000000000000000" valueY="37.7000000000000028" valueZ="1331.8501586914062500"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="X_Axis" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="910.0000000000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Constraints" expanded="0" Extensions="True">
+            <Extensions Count="2">
+                <Extension type="Gui::ViewProviderGroupExtension" name="ViewProviderGroupExtension">
+                </Extension>
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="5" TransientCount="0">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Z_Axis" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -1732,52 +1358,22 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="Rear1_side_reinforcement" expanded="0" Extensions="True">
-            <Extensions Count="1">
+        <ViewProvider name="Model" expanded="0" Extensions="True">
+            <Extensions Count="2">
+                <Extension type="Gui::ViewProviderOriginGroupExtension" name="ViewProviderOriginGroupExtension">
+                </Extension>
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
             </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
+            <Properties Count="5" TransientCount="0">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
                     <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
                 </Property>
                 <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
                     <Integer value="0"/>
                 </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
                 <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
                     <Integer value="0"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
                 </Property>
                 <Property name="ShowInTree" type="App::PropertyBool" status="1">
                     <Bool value="true"/>
@@ -1787,43 +1383,20 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="Rear1_center_reinforcement" expanded="0" Extensions="True">
+        <ViewProvider name="XY_Plane" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
             </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
                 </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
                     <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
                 </Property>
                 <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
                     <Integer value="0"/>
-                </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
                 </Property>
                 <Property name="Selectable" type="App::PropertyBool" status="1">
                     <Bool value="true"/>
@@ -1831,18 +1404,27 @@ AAAAAA==
                 <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
                     <Integer value="0"/>
                 </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
                 </Property>
                 <Property name="ShowInTree" type="App::PropertyBool" status="1">
                     <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="910.0000000000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="1">
                     <Bool value="true"/>
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="LCS_hinges" expanded="0" Extensions="True">
+        <ViewProvider name="LCS_Origin" expanded="0" Extensions="True">
             <Extensions Count="2">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -1891,7 +1473,144 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="back_screws" expanded="0" Extensions="True">
+        <ViewProvider name="XZ_Plane" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="1331.8501586914062500"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Y_Axis" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="910.0000000000000000"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Rear1_Acrylic_support" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="15" TransientCount="0">
+                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
+                    <String value=""/>
+                    <PersistentObject>
+                    </PersistentObject>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
+                    <Float value="2.0000000000000000"/>
+                </Property>
+                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
+                    <MaterialList file=""/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
+                    <ColorList file=""/>
+                </Property>
+                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
+                    <BoolList value=""/>
+                </Property>
+                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
+                    <Float value="2.0000000000000000"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="hinge_support" expanded="0" Extensions="True">
             <Extensions Count="2">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -2018,241 +1737,7 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="LCS_Origin" expanded="0" Extensions="True">
-            <Extensions Count="2">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-                <Extension type="PartGui::ViewProviderAttachExtension" name="ViewProviderAttachExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="13" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="FontSize" type="App::PropertyIntegerConstraint" status="1">
-                    <Integer value="10"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="1"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="4292280473"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="4292280473" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.6000000238418579"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="ShowLabel" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="60"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="Zoom" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="1.0000000000000000"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Y_Axis" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="910.0000000000000000"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Parts" expanded="1" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderGroupExtension" name="ViewProviderGroupExtension">
-                </Extension>
-            </Extensions>
-            <Properties Count="5" TransientCount="0">
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Model" expanded="1" Extensions="True">
-            <Extensions Count="2">
-                <Extension type="Gui::ViewProviderOriginGroupExtension" name="ViewProviderOriginGroupExtension">
-                </Extension>
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="5" TransientCount="0">
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="YZ_Plane" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="1331.8501586914062500"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Rear1_Main" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="hinge_support" expanded="0" Extensions="True">
+        <ViewProvider name="back_screws" expanded="0" Extensions="True">
             <Extensions Count="2">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
                 </Extension>
@@ -2379,400 +1864,6 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
-        <ViewProvider name="Rear1_Hinge_support" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Rear1_Hinge_support_base" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Rear1_Hinge_suppor_rib" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Constraints" expanded="0" Extensions="True">
-            <Extensions Count="2">
-                <Extension type="Gui::ViewProviderGroupExtension" name="ViewProviderGroupExtension">
-                </Extension>
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="5" TransientCount="0">
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Rear1_Acrylic_support" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="15" TransientCount="0">
-                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
-                    <String value=""/>
-                    <PersistentObject>
-                    </PersistentObject>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
-                    <MaterialList file=""/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
-                    <ColorList file=""/>
-                </Property>
-                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
-                    <BoolList value=""/>
-                </Property>
-                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
-                    <Float value="2.0000000000000000"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="XY_Plane" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="910.0000000000000000"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Z_Axis" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="1331.8501586914062500"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="Origin" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="6" TransientCount="0">
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyVector" status="5">
-                    <PropertyVector valueX="910.0000000000000000" valueY="85.7999999999999972" valueZ="1331.8501586914062500"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="false"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
-        <ViewProvider name="X_Axis" expanded="0" Extensions="True">
-            <Extensions Count="1">
-                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
-                </Extension>
-            </Extensions>
-            <Properties Count="11" TransientCount="0">
-                <Property name="BoundingBox" type="App::PropertyBool" status="9">
-                    <Bool value="false"/>
-                </Property>
-                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Selectable" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="ShapeColor" type="App::PropertyColor" status="1">
-                    <PropertyColor value="848755200"/>
-                </Property>
-                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
-                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
-                </Property>
-                <Property name="ShowInTree" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-                <Property name="Size" type="App::PropertyFloat" status="16777217">
-                    <Float value="910.0000000000000000"/>
-                </Property>
-                <Property name="Transparency" type="App::PropertyPercent" status="1">
-                    <Integer value="0"/>
-                </Property>
-                <Property name="Visibility" type="App::PropertyBool" status="1">
-                    <Bool value="true"/>
-                </Property>
-            </Properties>
-        </ViewProvider>
         <ViewProvider name="Rear_Acrylic_top" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
@@ -2828,6 +1919,102 @@ AAAAAA==
                 </Property>
             </Properties>
         </ViewProvider>
+        <ViewProvider name="Rear1_Main" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="15" TransientCount="0">
+                <Property name="ChildViewProvider" type="App::PropertyPersistentObject" status="9">
+                    <String value=""/>
+                    <PersistentObject>
+                    </PersistentObject>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="DrawStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="LineWidth" type="App::PropertyFloatConstraint" status="1">
+                    <Float value="2.0000000000000000"/>
+                </Property>
+                <Property name="MaterialList" type="App::PropertyMaterialList" status="65">
+                    <MaterialList file=""/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OverrideColorList" type="App::PropertyColorList" status="1">
+                    <ColorList file=""/>
+                </Property>
+                <Property name="OverrideMaterial" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="OverrideMaterialList" type="App::PropertyBoolList" status="1">
+                    <BoolList value=""/>
+                </Property>
+                <Property name="PointSize" type="App::PropertyFloatConstraint" status="1">
+                    <Float value="2.0000000000000000"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="33">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="1728052992" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="YZ_Plane" expanded="0" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+            </Extensions>
+            <Properties Count="11" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="9">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="848755200"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="848755200" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.0000000000000000"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Size" type="App::PropertyFloat" status="16777217">
+                    <Float value="1331.8501586914062500"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
         <ViewProvider name="Variables" expanded="0" Extensions="True">
             <Extensions Count="1">
                 <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
@@ -2851,6 +2038,78 @@ AAAAAA==
                 </Property>
                 <Property name="Visibility" type="App::PropertyBool" status="1">
                     <Bool value="true"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="Parts" expanded="1" Extensions="True">
+            <Extensions Count="1">
+                <Extension type="Gui::ViewProviderGroupExtension" name="ViewProviderGroupExtension">
+                </Extension>
+            </Extensions>
+            <Properties Count="5" TransientCount="0">
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+            </Properties>
+        </ViewProvider>
+        <ViewProvider name="LCS_hinges" expanded="0" Extensions="True">
+            <Extensions Count="2">
+                <Extension type="Gui::ViewProviderLinkObserver" name="ViewProviderLinkObserver">
+                </Extension>
+                <Extension type="PartGui::ViewProviderAttachExtension" name="ViewProviderAttachExtension">
+                </Extension>
+            </Extensions>
+            <Properties Count="13" TransientCount="0">
+                <Property name="BoundingBox" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="DisplayMode" type="App::PropertyEnumeration" status="9">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="FontSize" type="App::PropertyIntegerConstraint" status="1">
+                    <Integer value="10"/>
+                </Property>
+                <Property name="OnTopWhenSelected" type="App::PropertyEnumeration" status="1">
+                    <Integer value="1"/>
+                </Property>
+                <Property name="Selectable" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="SelectionStyle" type="App::PropertyEnumeration" status="1">
+                    <Integer value="0"/>
+                </Property>
+                <Property name="ShapeColor" type="App::PropertyColor" status="1">
+                    <PropertyColor value="4292280473"/>
+                </Property>
+                <Property name="ShapeMaterial" type="App::PropertyMaterial" status="1">
+                    <PropertyMaterial ambientColor="858993408" diffuseColor="4292280473" specularColor="0" emissiveColor="0" shininess="0.2000000029802322" transparency="0.6000000238418579"/>
+                </Property>
+                <Property name="ShowInTree" type="App::PropertyBool" status="1">
+                    <Bool value="true"/>
+                </Property>
+                <Property name="ShowLabel" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Transparency" type="App::PropertyPercent" status="1">
+                    <Integer value="60"/>
+                </Property>
+                <Property name="Visibility" type="App::PropertyBool" status="1">
+                    <Bool value="false"/>
+                </Property>
+                <Property name="Zoom" type="App::PropertyFloatConstraint" status="1">
+                    <Float value="1.0000000000000000"/>
                 </Property>
             </Properties>
         </ViewProvider>
@@ -2904,11 +2163,11 @@ AAAAAA==
             </Properties>
         </ViewProvider>
     </ViewProviderData>
-    <Camera settings="OrthographicCamera {&#10;  viewportMapping ADJUST_CAMERA&#10;  position 467.32077 -579.44348 217.80165&#10;  orientation 0.99901491 0.031687383 0.031065559  1.5916038&#10;  nearDistance 510.43878&#10;  farDistance 690.30865&#10;  aspectRatio 1&#10;  focalDistance 757.66626&#10;  height 1218.2527&#10;&#10;}&#10;"/>
+    <Camera settings="OrthographicCamera {&#10;  viewportMapping ADJUST_CAMERA&#10;  position 351.33994 -581.11499 401.85928&#10;  orientation 1 0 0  1.5707964&#10;  nearDistance 551.56293&#10;  farDistance 601.71631&#10;  aspectRatio 1&#10;  focalDistance 757.66626&#10;  height 1218.2527&#10;&#10;}&#10;"/>
 </Document>
 
-2320|1739|B|thumbnails/Thumbnail.png
-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
+3828|2870|B|thumbnails/Thumbnail.png
+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
 12|8|B|DiffuseColor
 AQAAAADMzMw=
 12|8|B|LineColorArray
